@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  color:  var(--secon-color);
+
+}
+
+:root{
+  --prime-color: #dd125c;
+  --secon-color:#162849;
+}
+
+img {
+  width: 100%;
+}
+
+.dashbR {
+  padding: 10px 0 0 1.8rem;
+}
+
+.dashbR input::placeholder {
+  text-transform: capitalize;
+
+}
+
+.dashbR img {
+  max-width: 18px;
+}
+
+.form-floating.cal>label {
+  right: 0;
+}
+
+input {
+  background: transparent !important;
+}
+
+.invalid-input {
+  border: 1px solid red !important;
+}
+
+
+.dashbR input:focus {
+  outline: none;
+  border: 0;
+  box-shadow: 0;
+}
+
+.input-group {
+  position: relative;
+}
+
+.calendar-icon-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #333;
+  border: 0;
+  padding: 0;
+}
+
+.invalid-input {
+  border: 1px solid red !important;
+}
+
+.dashbR .fm {
+ 
+  padding: 10px;
+}
+
+.flatpickr-weekdaycontainer span:first-child {
+  color: red;
+
+}
+
+.dashbR .form-floating>label {
+  padding: 6px 8px !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#dispositions {
+  /* Example custom style */
+  background-color: #f0f8ff;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-select,
+.input-group>.form-control,
+.input-group>.form-select {
+  height: 38px;
+}
+.dashbR .form-floating>.form-select {
+  padding-top: 8px;
+  padding-bottom: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.logo img {
+  max-width: 140px;
+}
+
+.navR {
+  padding: 20px 0 0 0;
+}
+ .dashbR input:focus{
+  border-color:var(--prime-color) ;
+}
+.form-floating.input-group:focus{
+  border-color:var(--prime-color) ;
+}
+
+.scrollable-grid .table-responsive {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+
+
+/* Stylish Scrollbar */
+.scrollable-grid .table-responsive::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable-grid .table-responsive::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.scrollable-grid .table-responsive::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #4facfe, var(--secon-color));
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+.scrollable-grid .table-responsive::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--secon-color), var(--prime-color));
+}
+.main .container {
+  margin-left: auto;
+  margin-right: inherit;
+}
+ 
+@media (min-width: 1200px) {
+  .main .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1350px;
+  }
+
+  .navR .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1290px;
+} 
+}
+
+
+/* Ensure full calendar fits 7 columns */
+.flatpickr-calendar {
+  font-size: 13px;
+  width: 252px !important; /* 7 days x (34px per day incl. margin) */
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Compact header and weekdays */
+.flatpickr-months, .flatpickr-weekdays {
+  padding: 5px 8px;
+}
+
+/* Proper 7-day grid layout */
+.flatpickr-days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns always */
+  gap: 2px;
+  padding: 5px;
+}
+
+/* Day box style */
+.flatpickr-day {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin: 0 !important; /* no extra margin to avoid overflow */
+  text-align: center;
+}
+
+.flatpickr-months, .flatpickr-weekdays {
+  width: 254px;
+}
+
+.dayContainer {
+  min-width: 247.875px;
+  max-width: 247.875px;}

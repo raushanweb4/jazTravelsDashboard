@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaz Travels - Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Flatpickr Theme & CSS -->
+    <link rel="stylesheet" href="./css/material_blue.css" />
+    <link rel="stylesheet" href="./css/flatpickr.min.css" />
+
+    <!-- Font Awesome for calendar icon -->
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="navR">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-10">
+                    <div class="dashbR ">
+
+                        <form class="fm">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <!-- Start Date -->
+                                    <div class="form-floating input-group">
+                                        <input type="text" class="form-control" id="startDate" placeholder="Start Date">
+                                        <label for="startDate">Start Date</label>
+                                        <button type="button" class="input-group-text bg-white calendar-icon-right"
+                                            id="startDateIcon">
+                                            <img src="./images/calendar.png" alt="cal">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <!-- End Date -->
+                                    <div class="form-floating input-group">
+                                        <input type="text" class="form-control" id="endDate" placeholder="End Date">
+                                        <label for="endDate">End Date</label>
+                                        <button type="button" class="input-group-text bg-white calendar-icon-right"
+                                            id="endDateIcon">
+                                            <img src="./images/calendar.png" alt="cal">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Departure -->
+                                <div class="col-md-4">
+                                    <div class="form-floating input-group">
+                                        <input type="text" class="form-control" id="departure" placeholder="Departure">
+                                        <label for="departure">Departure</label>
+                                        <button type="button" class="input-group-text bg-white calendar-icon-right"
+                                            id="departureIcon">
+                                            <img src="./images/calendar.png" alt="cal">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Booking ID -->
+                                <div class="col-md-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="bookingId" placeholder="Booking ID">
+                                        <label for="bookingId">Booking ID</label>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-4">
+                                    <div class="form-floating position-relative">
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <label for="email">Email</label>
+                                        <div id="emailError" class="text-danger small position-absolute"
+                                            style="bottom: -1.2rem;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Phone No -->
+                                <div class="col-md-4">
+                                    <div class="form-floating position-relative">
+                                        <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                                        <label for="phone">Phone No</label>
+                                        <div id="phoneError" class="text-danger small position-absolute"
+                                            style="bottom: -1.2rem;">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Dispositions Dropdown -->
+                                <div class="col-md-4">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="dispositions" aria-label="Dispositions">
+                                            <option selected disabled>Select Disposition</option>
+                                            <option value="confirmed">Confirmed</option>
+                                            <option value="pending">Pending</option>
+                                            <option value="cancelled">Cancelled</option>
+                                            <option value="rescheduled">Rescheduled</option>
+                                        </select>
+                                        <label for="dispositions">Dispositions</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+
+                        <!-- Scrollable Grid -->
+                        <div class="scrollable-grid mt-4">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped text-center">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Col 1</th>
+                                            <th>Col 2</th>
+                                            <th>Col 3</th>
+                                            <th>Col 4</th>
+                                            <th>Col 5</th>
+                                            <th>Col 6</th>
+                                            <th>Col 7</th>
+                                            <th>Col 8</th>
+                                            <th>Col 9</th>
+                                            <th>Col 10</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Sample Rows -->
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data 1</td>
+                                            <td>Data 2</td>
+                                            <td>Data 3</td>
+                                            <td>Data 4</td>
+                                            <td>Data 5</td>
+                                            <td>Data 6</td>
+                                            <td>Data 7</td>
+                                            <td>Data 8</td>
+                                            <td>Data 9</td>
+                                            <td>Data 10</td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS Libraries -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/flatpickr.js"></script>
+
+
+    <script>
+        document.getElementById('startDateIcon').addEventListener('click', () => {
+            document.getElementById('startDate').focus();
+        });
+
+        document.getElementById('endDateIcon').addEventListener('click', () => {
+            document.getElementById('endDate').focus();
+
+
+        });
+
+
+        // JS to handle Departure icon click
+        document.getElementById('departureIcon').addEventListener('click', () => {
+            document.getElementById('departure').focus();
+        });
+
+
+
+    </script>
+
+    <!-- Flatpickr Initialization -->
+    <script>
+        flatpickr("#startDate", {
+            dateFormat: "Y-m-d",
+            animate: true,
+            allowInput: true,
+            // altInput: true,
+            altFormat: "F j, Y"
+        });
+
+        flatpickr("#endDate", {
+            dateFormat: "Y-m-d",
+            animate: true,
+            allowInput: true,
+            // altInput: true,
+            altFormat: "F j, Y"
+        });
+
+        // Flatpickr Initialization for Departure
+        flatpickr("#departure", {
+            dateFormat: "Y-m-d",
+            animate: true,
+            allowInput: true,
+            altFormat: "F j, Y"
+        });
+    </script>
+
+    <script>
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const emailError = document.getElementById('emailError');
+        const phoneError = document.getElementById('phoneError');
+
+        email.addEventListener('input', () => {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(email.value)) {
+                email.classList.add('invalid-input');
+                emailError.textContent = "Please enter a valid email.";
+            } else {
+                email.classList.remove('invalid-input');
+                emailError.textContent = "";
+            }
+        });
+
+        phone.addEventListener('input', () => {
+            const regex = /^[0-9]{10}$/;
+            if (!regex.test(phone.value)) {
+                phone.classList.add('invalid-input');
+                phoneError.textContent = "Enter a 10-digit phone number.";
+            } else {
+                phone.classList.remove('invalid-input');
+                phoneError.textContent = "";
+            }
+        });
+    </script>
+
+
+
+
+    <!-- Your custom JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
