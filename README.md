@@ -29,6 +29,7 @@ This project provides a sleek UI for searching and filtering travel bookings.
 
 
 ## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/05d62fb8-d93c-4910-a3f0-260c9b116ff6)
 
 
 
